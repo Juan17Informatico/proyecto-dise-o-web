@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #f8f5f5;
+  color: #323b39;
+  font-family: "Roboto", sans-serif;
+}
+/*Empieza diseño grid*/
+.contenedor {
+  width: 90%;
+  max-width: 1024px;
+  margin: 20px auto;
+  display: grid;
+  /* grid-gap: 20px; /*Aplica un margen a cada uno de los elementos excepto en los extremos*/
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, auto);
+}
+/*Definimos padding, color de fondo y border radius de los div*/
+.contenedor > div {
+  background: #c9bfbf;
+  padding: 20px;
+  border-radius: 10px;
+}
+.contenedor .contenido1,
+.contenedor .contenido2 {
+  background-color: #ded3d3;
+}
+/*Definimos padding, color de fondo y border radius del resto de los elementos*/
+.contenedor .footer,
+.contenedor .sidebar {
+  background: #69807a;
+  padding: 20px;
+  border-radius: 10px;
+}
+/*Empezamos a editar el header y su posicion en la página*/
+.contenedor .header {
+  background-image: url(versionFinalFinalFinal.png);
+  height: 400px;  
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  color: #cef2e9;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  margin-bottom: 0px auto;
+}
+
+.contenedor .header h2 {
+  padding: 20px;
+  font-size: 22px;
+}
+/*Editamos la navegacion*/
+.contenedor .navegacion {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  /**/
+  margin-bottom: 20px;
+  /**/
+  background: #69807a;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navegacion a {
+  padding: 1rem 2rem;
+  color: #323b39;
+  text-decoration: none;
+
+  font-size: 100%;
+  font-weight: 700;
+}
+@media (min-width: 780px) {
+  .navegacion {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.navegacion a:hover {
+  background-color: #496b63;
+  border-radius: 20px;
+}
+/* */
+
+/*editamos el primer contenido*/
+.contenedor .contenido1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  grid-column: span 2;
+}
+.contenedor .contenido1 {
+  font-size: 20px;
+}
+/*Editamos el segundo contenido*/
+.contenedor .contenido2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  grid-column: span 2;
+}
+.contenedor .contenido2 {
+  font-size: 20px;
+}
+
+/*Editamos el formulario*/
+.contenedor .sidebar {
+  grid-column: 3 / 4;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  /**/
+  padding: 15px;
+  border-top-left-radius: none;
+  margin: 20px auto;
+}
+.formulario {
+  padding: 30px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.contenedorForm {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/*Editamos elementos del formulario*/
+.campo {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .campo {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .campo {
+    flex: 0 0 calc(50% - 0.5rem);
+  }
+}
+
+.campo label {
+  color: #f5f0f0;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.campo input[type="text"],
+.campo input[type="time"],
+.campo input[type="date"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+.campo input[type="date"],
+.campo input[type="time"] {
+  margin-right: 20px;
+  width: 150px;
+}
+.campo input[type="text"] {
+  width: 150px;
+}
+label {
+  float: left;
+  width: 60px;
+  padding-right: 24px;
+}
+input {
+  float: left;
+  width: 100%;
+}
+.enviar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.boton {
+  background: #323b39;
+  color: #f5f0f0;
+  margin-top: 0.5rem;
+  padding: 0.5rem 3rem;
+  border-radius: 5px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border: none;
+}
+.boton:hover {
+  cursor: pointer;
+  background-color: #103029;
+}
+
+/*Editamos el titulo*/
+
+.titulo {
+  margin: 15px auto;
+  background: #323b39;
+  border-radius: 10px;
+}
+legend {
+  color: #f5f0f0;
+  text-align: center;
+  font-size: 1.5rem;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/*Editamos el pie de página*/
+.contenedor .footer {
+  color: #f5f0f0;
+  text-align: center;
+  grid-column: span 3;
+}
+
+/*SERVICIOS*/
+.contenedor .sidebarServicios {
+  grid-column: 3 / 4;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  /**/
+  padding: 15px;
+  border-top-left-radius: none;
+  margin: 20px auto;
+  /**/
+}
+
+.contenedor .contenido-servicios {
+  margin: 20px auto;
+  width: 89%;
+  padding: 30px;
+  grid-column: span 2;
+}
+
+.contenedor .contenido2-servicios {
+  margin: 20px auto;
+  font-size: 25px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  grid-column: span 2;
+}
+
+/*titulos*/
+.contenedor .contenido-servicios h3 {
+  font-size: 22px;
+}
+.contenedor .contenido-servicios ul {
+  font-size: 18px;
+}
+
+.contenedor .contenido2-servicios p {
+  font-size: 22px;
+}
+
+/*PRODUCTOS*/
+
+/*Definimos padding, color de fondo y border radius de los div*/
+.contenedor > div {
+  background-color: #ded3d3;
+  padding: 20px;
+  margin: 20px auto;
+  grid-gap: 20px;
+  border-radius: 10px;
+}
+.contenedor #productos p {
+  font-size: 18px;
+  color: black;
+  font-style: oblique;
+}
+.contenedor .contenido2-productos,
+.contenedor .contenido3-productos,
+.contenedor .contenido5-productos,
+.contenedor .contenido6-productos {
+  margin-left: 20px;
+}
+
+/* GUARDERÍA */
+
+.contenedor > div .contenido-guarderia,
+.contenedor > div .contenido2-guarderia {
+  padding: 20px;
+  margin: 20px auto;
+  grid-gap: 20px;
+}
+.contenido-guarderia,
+.contenido2-guarderia {
+  grid-column: span 2;
+}
+
+/*TEXTO*/
+
+.contenido-guarderia h3,
+.contenido-guarderia p,
+.contenido-guarderia img,
+.contenido2-guarderia h3,
+.contenido2-guarderia p,
+.contenido2-guarderia img {
+  padding: 20px;
+}
+
+/*TITULOS*/
+.contenido-guarderia h3,
+.contenido2-guarderia h3 {
+  font-size: 22px;
+}
+
+.contenido-guarderia p,
+.contenido2-guarderia p {
+  font-size: 18px;
+}
+
+/* sidebar */
+
+.contenedor .sidebar-guarderia {
+  grid-column: 3/4;
+  background-color: #ded3d3;
+  text-align: center;
+  display: center;
+  align-items: center;
+  justify-content: center;
+
+  grid-row: 3/5;
+  grid-gap: 20px;
+  /**/
+  padding: 15px;
+  border-radius:  10px;
+  margin: 20px auto;
+  margin-left: 20px;
+  /**/
+}
+
+.contenedor .sidebar-guarderia p{
+  font-size: 18px;
+  margin: 5px auto;
+  width: 100%;
+}
+
+/*titulos*/
+.contenedor .sidebar-guarderia h3{
+  font-size: 22px;
+  margin: 10px auto;
+}
+
+
+/*PROMOCIONES*/
+.contenedor #promociones p {
+  font-size: 18px;
+  color: black;
+  font-style: oblique;
+}
+.contenedor .contenido-promociones2,
+.contenedor .contenido-promociones3,
+.contenedor .contenido-promociones5,
+.contenedor .contenido-promociones6{
+  margin-left: 20px;
+}

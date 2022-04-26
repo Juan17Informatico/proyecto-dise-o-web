@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Centro Veterinario</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <header class="header">
+        <img src="veterinario (2).png" width="50px" alt="">
+        
+      </header>
+      <nav class="navegacion">
+        <a href="index.html">inicio</a>
+        <a href="servicios.html">.Servicios.</a>
+        <a href="productos.html">.Productos.</a>
+        <a href="guarderia.html">.Guardería.</a>
+        <a href="promociones.html">.Promociones.</a>
+      </nav>
+      <div class="contenido1">
+        <h2>Cuidados y educación para su perro</h2><br>
+        <img src="perrito (2).png" style="float: right" width="150px" alt="" />
+        <p>
+          tener un perro indica tener gran responsabilidad; es casi como un
+          hijo, implican casi o en ocasiones el mismo nivel de responsabilidad.
+          Aunque los consejos para cuidar a tus mascotas es sencillo.
+        </p><br>
+        <a href="#" target="_blank">Ver más información</a>
+      </div>
+      <!---->
+      <div class="contenido2">
+        <h1>Salir de viaje con su mascota</h1><br>
+        <img src="cocker.png" width="" style="float: left" alt="" />
+        <p>
+          Nuestros cuidados buscan que su mascota se sienta amada como en casa.
+          Manteniendo rutinas y hábitos saludables.
+        </p>
+      </div>
+
+      <aside class="sidebar">
+        <!--<h3>Solicitar cita médica</h3>  -->
+
+        <form action="" method="" class="formulario">
+          <legend class="titulo">Solicitar cita médica</legend>
+          <div class="contenedorForm">
+            <div class="campo">
+              <label for="mascota">mascota:</label> <br />
+              <input
+                type="text"
+                name="mascota"
+                id="mascota"
+                placeholder="Ingrese Nombre"
+                required
+              />
+            </div>
+            <div class="campo">
+              <label for="edad">Edad:</label> <br />
+              <input
+                type="text"
+                name="edad"
+                id="edad"
+                placeholder="Edad"
+                required
+              />
+            </div>
+            <div class="campo">
+              <label for="raza">Raza:</label> <br />
+              <input
+                type="text"
+                name="raza"
+                id="raza"
+                placeholder="Ingrese Raza"
+                required
+              />
+            </div>
+            <div class="campo">
+              <label for="fecha">Fecha:</label> <br />
+              <input type="date" name="fecha" id="fecha" required />
+            </div>
+            <div class="campo">
+              <br /><label for="hora">Hora:</label> <br />
+              <input type="time" name="hora" id="hora" required />
+            </div>
+            <div class="campo">
+              <br /><label for="amo">Amo:</label><br />
+              <input
+                type="text"
+                name="nombre"
+                id="amo"
+                placeholder="Ingrese Nombre"
+                required
+              />
+            </div>
+            <div class="enviar">
+              <button class="boton" type="submit">VALIDAR CITA</button>
+            </div>
+          </div>
+        </form>
+      </aside>
+
+      <footer class="footer">
+        <p>
+          &copy; Contactenos <br />
+          Línea gratuita 018000-00001 <br />
+          Correo: preguntas@caninosyfelinos.com
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

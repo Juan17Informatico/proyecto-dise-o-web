@@ -1,0 +1,250 @@
+html {
+  background: #f5f0f0; /*El color del fondo de la página*/
+  box-sizing: border-box; /**/
+  min-height: 100%;
+  font-family: Arial;
+}
+.cabecera{
+    margin-bottom: 0px;
+}
+header .img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-bottom: 0px;
+  position: relative;
+  width: 100%;
+  height: 475px;
+}
+
+@media (min-width: 1024px) {
+  .cabecera, 
+  .nav,
+  .item,
+  .copyright {
+    width: 100%;
+    margin: 20px auto;
+    margin-top: 0px;
+    margin-bottom: 0;
+    max-width: 1400px;
+  }
+
+  .item,
+  .copyright {
+    width: 100%;
+    margin: 20px auto;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    max-width: 1200px;
+  }
+
+  .navegacion {
+    background: #8c9c98;
+    margin-top: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navegacion a {
+    padding: 1rem 2rem;
+    color: #323b39;
+    text-decoration: none;
+    font-size: 100%;
+    font-weight: 700;
+  }
+  @media (min-width: 768px) {
+    .navegacion {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  .navegacion a:hover {
+    background-color: #496b63;
+    border-radius: 20px;
+  }
+
+  .item {
+    display: grid;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+  }
+  #item1 {
+    background: #c9bfbf;
+    height: 325px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    grid-row: 1;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    width: 100%;
+    margin: 40px 120px 40px 40px;
+    padding: 10px 10px 10px 10px;
+  }
+  #item2 {
+    background: #c9bfbf;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    align-items: left;
+    grid-row: 3;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    width: 100%;
+    margin: 40px 15px 15px 40px;
+  }
+  #item3 {
+    grid-column-start: 6;
+    grid-column-end: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 100%;
+  }
+  #item3 p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    display: block;
+    width: 100%;
+  }
+  .copyright {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    grid-row: 6;
+    grid-column-start: 5;
+    grid-column-end: 5;
+  }
+  #item1 p {
+    text-align: left;
+    font-size: 18px;
+    display: block;
+    font-weight: 700;
+  }
+  
+  #item2 p {
+    text-align: left;
+    font-size: 18px;
+    display: block;
+    font-weight: 700;
+  }
+  .formulario {
+    width: 300px;
+    background-color: #69807a;
+    padding: 30px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  .titulo {
+    background-color: #323b39;
+    width: 359px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .titulo legend {
+    color: #f5f0f0;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .contenedor {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .campo {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  @media (min-width: 480px) {
+    .campo {
+      display: flex;
+      align-items: center;
+    }
+  }
+  @media (min-width: 768px) {
+    .campo {
+      flex: 0 0 calc(50% - 0.5rem);
+    }
+  }
+  .campo label {
+    color: #f5f0f0;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  .campo input[type="text"],
+  .campo input[type="time"],
+  .campo input[type="date"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+  }
+  .campo input[type="date"],
+  .campo input[type="time"] {
+    margin-right: 30px;
+  }
+  .campo input[type="text"] {
+    width: 300px;
+  }
+  label {
+    float: left;
+    width: 200px;
+    padding-right: 24px;
+  }
+  input {
+    float: left;
+    width: 100%;
+  }
+  .enviar {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .boton {
+    background: #323b39;
+    color: #f5f0f0;
+    margin-top: 0.5rem;
+    padding: 0.5rem 3rem;
+    border-radius: 5px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border: none;
+  }
+  .boton:hover {
+    cursor: pointer;
+    background-color: #103029;
+  }
+  .copyright {
+    text-align: center;
+  }
+  
+  #item1 fieldset {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 325px;
+  }
+  
+  #item2 fieldset {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 325px;
+  }
+
+}
